@@ -1,14 +1,15 @@
 ## Overview
-Seeker is a game in which the player seeks to find the hider by guessing its location. The hider gives hints until it is found.
+Jumper is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time.
 
 ## Rules
-Seeker is played according to the following rules.
+Jumper is played according to the following rules.
 
-The hider's location is a random number between 1 and 1000.
-The seeker searches for the hider by guessing its location.
-If the guess is closer to the hider's location it says, "Getting warmer!"
-If the guess is farther away from the hider's location it says, "Getting colder!"
-If the guess is correct the hider says, "You found me!". The game is over.
+The puzzle is a secret word randomly chosen from a list.
+The player guesses a letter in the puzzle.
+If the guess is correct, the letter is revealed.
+If the guess is incorrect, a line is cut on the player's parachute.
+If the puzzle is solved the game is over.
+If the player has no more parachute the game is over.
 
 ## Getting Started
 ---
@@ -25,11 +26,21 @@ project folder. Select the main module inside the dice folder and click the "run
 The project files and folders are organized as follows:
 ```
 root                    (project root folder)
-+-- seeker                (source code for game)
++-- jumper                (source code for game)
   +-- game              (specific classes)
   +-- __main__.py       (program entry point)
 +-- README.md           (general info)
 ```
+## Game Design
+
+Main --------- Director (Class)-------Game (Class)---------Jumper (Class)---------Guess (Class)---------TerminalServices ()
+  |                 |                   |                   |                       |                       |
+Start game        get_inputs          Is playing
+                  do-updates            Y/N
+                  do-outputs            |
+                    (function)       Create parachute
+                    |                Create wordlist
+                                      (objects)
 
 ## Required Technologies
 ---
@@ -38,3 +49,5 @@ root                    (project root folder)
 ## Authors
 ---
 * Jason McLaughlin (jasnatbyui@gmail.com)
+* Kyla Papa (email@.......com)
+* Amon Brollo (email@...........com)
