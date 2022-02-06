@@ -18,15 +18,18 @@ class Director:
 
     """
 
+    __wordList = ""
+    __terminal_service = TerminalService()
+
     def __init__(self):
         """Constructs a new instance of Director.
         Args:
             self (Jumper): An instance of Director.
         """
-        self.wordList = []
+        self.__wordList = []
         self.is_playing = True
         self.jumper = Jumper
-        self._terminal_service = TerminalService()
+        self.__terminal_service = TerminalService()
 
     def start_game(self):
         """Starts the game by running the main game loop. Random word selected.
