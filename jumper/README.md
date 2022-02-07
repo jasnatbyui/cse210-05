@@ -50,4 +50,4 @@ Start game        get_inputs          Is playing
 ---
 * Jason McLaughlin (jasnatbyui@gmail.com)
 * Kyla Papa (email@.......com)
-* Amon Brollo (amonbrollo@gmailcom)
+* Amon Brollo (amonbrollo@gmail.com)
