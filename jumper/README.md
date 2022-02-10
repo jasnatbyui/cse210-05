@@ -52,5 +52,5 @@ Start game        get_inputs          Is playing
 ## Authors
 ---
 * Jason McLaughlin (jasnatbyui@gmail.com)
-* Kyla Papa (email@.......com)
+* Kyla Papa (kylagwenp01@gmailcom)
 * Amon Brollo (amonbrollo@gmail.com)
